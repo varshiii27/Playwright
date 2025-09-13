@@ -31,9 +31,9 @@ jobs:
         sudo ln -s /opt/allure-2.30.0/bin/allure /usr/bin/allure
         allure --version
     
-    # ✅ Debug step (list files in tests folder)
     - name: Debug – list test files
-      run: ls -R e2e/tests
+      run: ls -R tests
+
 
     - name: Run Playwright tests
       run: npx playwright test "tests/logintest.spec.js" --reporter=html,allure-playwright

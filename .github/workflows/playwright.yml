@@ -38,9 +38,6 @@ jobs:
           sudo ln -s /opt/allure-2.30.0/bin/allure /usr/bin/allure
           allure --version
 
-      # Debug: list test files
-      - name: Debug – list test files
-        run: ls -R e2e/tests
 
       # Run Playwright tests (uses config: testDir = e2e/tests)
       - name: Run Playwright tests

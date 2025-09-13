@@ -32,7 +32,7 @@ jobs:
         allure --version
  
     - name: Run Playwright tests
-      run: npx playwright test logintest.test.js --reporter=html,allure-playwright
+      run: npx playwright test logintest.spec.js --reporter=html,allure-playwright
  
     - name: Generate Allure Report
       run: allure generate allure-results --clean -o allure-report

@@ -38,22 +38,13 @@ jobs:
           sudo ln -s /opt/allure-2.30.0/bin/allure /usr/bin/allure
           allure --version
 
-      # Debug: List e2e/tests directory
+      # Debug: list test files to confirm path
       - name: List e2e/tests directory
-        run: ls -R e2e/tests
+        run: ls -R e2e/tests || echo "Directory not found"
 
-      # Debug: Check Playwright version
-      - name: Check Playwright version
-        run: npx playwright --version
-
-      # Debug: Show Playwright config
-      - name: Show Playwright config
-        run: npx playwright show-config
-
-      # Run Playwright tests
-      - name: Run Playwright tests
+      # Run ONLY logintest.spec.js
+      - name: Run Playwright Login Test
         run: npx playwright test e2e/tests/logintest.spec.js --project=chromium --reporter=html,allure-playwright
-        working-directory: .
 
       # Generate Allure Report
       - name: Generate Allure Report

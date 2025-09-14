@@ -12,71 +12,59 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout code
-      - uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
-      # Debug: List all directory contents
-      - name: List repository contents
-        run: ls -R
+    - name: List repository contents
+      run: ls -R
 
-      # Setup Node.js
-      - uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
+    - uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
 
-      # Install dependencies
-      - name: Install dependencies
-        run: npm ci
+    - name: Install dependencies
+      run: npm ci
+    - name: Install latest Playwright
+      run: npm install @playwright/test@latest
+    - name: Check Playwright version
+      run: npx @playwright/test --version
 
-      # Debug: List installed packages
-      - name: List installed packages
-        run: npm list --depth=0
+    - name: Install Playwright Browsers
+      run: npx @playwright/test install --with-deps
 
-      # Install Playwright browsers with system deps
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+    - name: Install Allure CLI
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y unzip default-jre wget
+        wget https://github.com/allure-framework/allure2/releases/download/2.30.0/allure-2.30.0.zip
+        unzip allure-2.30.0.zip -d /opt/
+        sudo ln -s /opt/allure-2.30.0/bin/allure /usr/bin/allure
+        allure --version
 
-      # Install Allure CLI
-      - name: Install Allure CLI
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y unzip default-jre wget
-          wget https://github.com/allure-framework/allure2/releases/download/2.30.0/allure-2.30.0.zip
-          unzip allure-2.30.0.zip -d /opt/
-          sudo ln -s /opt/allure-2.30.0/bin/allure /usr/bin/allure
-          allure --version
+    - name: List e2e/tests directory
+      run: ls -R e2e/tests || echo "e2e/tests does not exist"
 
-      # Debug: List e2e/tests directory
-      - name: List e2e/tests directory
-        run: ls -R e2e/tests || echo "e2e/tests does not exist"
+    - name: Show Playwright config file
+      run: cat playwright.config.js || echo "playwright.config.js not found"
 
-      # Debug: Show Playwright config
-      - name: Show Playwright config
-        run: npx playwright show-config
+    - name: Run Playwright tests
+      run: npx @playwright/test test e2e/tests/logintest.spec.js --project=chromium --reporter=html,allure-playwright
+      working-directory: .
 
-      # Run Playwright tests
-      - name: Run Playwright tests
-        run: npx playwright test e2e/tests/logintest.spec.js --project=chromium --reporter=html,allure-playwright
-        working-directory: .
+    - name: Generate Allure Report
+      run: allure generate allure-results --clean -o allure-report
 
-      # Generate Allure Report
-      - name: Generate Allure Report
-        run: allure generate allure-results --clean -o allure-report
+    - name: Upload Allure Report
+      if: ${{ !cancelled() }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: allure-report
+        path: allure-report/
+        retention-days: 30
 
-      # Upload Allure Report
-      - name: Upload Allure Report
-        if: ${{ !cancelled() }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report
-          path: allure-report/
-          retention-days: 30
-
-      # Upload Playwright HTML Report
-      - name: Upload Playwright HTML Report
-        if: ${{ !cancelled() }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: playwright-report
-          path: playwright-report/
-          retention-days: 30
+    - name: Upload Playwright HTML Report
+      if: ${{ !cancelled() }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: playwright-report
+        path: playwright-report/
+        retention-days: 30

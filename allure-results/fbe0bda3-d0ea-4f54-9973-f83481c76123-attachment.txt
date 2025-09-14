@@ -1,0 +1,3 @@
+Page Title1: Fast and reliable end-to-end testing for modern web apps | Playwright
+Page Title2: Wikipedia
+Page Title3: Google

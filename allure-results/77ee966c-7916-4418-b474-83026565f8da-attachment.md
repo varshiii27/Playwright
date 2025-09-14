@@ -1,0 +1,191 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic:
+        - img "adplus-dvertising"
+    - iframe [ref=e7]:
+      
+  - generic [ref=e8]:
+    - banner [ref=e9]:
+      - link [ref=e10] [cursor=pointer]:
+        - /url: https://demoqa.com
+        - img [ref=e11] [cursor=pointer]
+    - generic [ref=e14]:
+      - generic [ref=e17]:
+        - generic [ref=e20] [cursor=pointer]:
+          - generic [ref=e21] [cursor=pointer]:
+            - img [ref=e23] [cursor=pointer]
+            - text: Elements
+          - img [ref=e28] [cursor=pointer]
+        - generic [ref=e34] [cursor=pointer]:
+          - generic [ref=e35] [cursor=pointer]:
+            - img [ref=e37] [cursor=pointer]
+            - text: Forms
+          - img [ref=e43] [cursor=pointer]
+        - generic [ref=e49] [cursor=pointer]:
+          - generic [ref=e50] [cursor=pointer]:
+            - img [ref=e52] [cursor=pointer]
+            - text: Alerts, Frame & Windows
+          - img [ref=e57] [cursor=pointer]
+        - generic [ref=e63] [cursor=pointer]:
+          - generic [ref=e64] [cursor=pointer]:
+            - img [ref=e66] [cursor=pointer]
+            - text: Widgets
+          - img [ref=e71] [cursor=pointer]
+        - generic [ref=e77] [cursor=pointer]:
+          - generic [ref=e78] [cursor=pointer]:
+            - img [ref=e80] [cursor=pointer]
+            - text: Interactions
+          - img [ref=e85] [cursor=pointer]
+        - generic [ref=e89]:
+          - generic [ref=e91] [cursor=pointer]:
+            - generic [ref=e92] [cursor=pointer]:
+              - img [ref=e94] [cursor=pointer]
+              - text: Book Store Application
+            - img [ref=e99] [cursor=pointer]
+          - list [ref=e104]:
+            - listitem [ref=e105] [cursor=pointer]:
+              - img [ref=e106] [cursor=pointer]
+              - generic [ref=e108] [cursor=pointer]: Login
+            - listitem [ref=e109] [cursor=pointer]:
+              - img [ref=e110] [cursor=pointer]
+              - generic [ref=e112] [cursor=pointer]: Book Store
+            - listitem [ref=e113] [cursor=pointer]:
+              - img [ref=e114] [cursor=pointer]
+              - generic [ref=e116] [cursor=pointer]: Profile
+            - listitem [ref=e117] [cursor=pointer]:
+              - img [ref=e118] [cursor=pointer]
+              - generic [ref=e120] [cursor=pointer]: Book Store API
+      - generic [ref=e121]:
+        - generic [ref=e122]:
+          - generic [ref=e123]:
+            - generic [ref=e125]:
+              - textbox "Type to search" [ref=e126]
+              - img [ref=e130]
+            - button "Login" [ref=e134] [cursor=pointer]
+          - generic [ref=e135]:
+            - grid [ref=e136]:
+              - row "Image Title Author Publisher" [ref=e138]:
+                - columnheader "Image" [ref=e139] [cursor=pointer]:
+                  - generic [ref=e140] [cursor=pointer]: Image
+                - columnheader "Title" [ref=e142] [cursor=pointer]:
+                  - generic [ref=e143] [cursor=pointer]: Title
+                - columnheader "Author" [ref=e145] [cursor=pointer]:
+                  - generic [ref=e146] [cursor=pointer]: Author
+                - columnheader "Publisher" [ref=e148] [cursor=pointer]:
+                  - generic [ref=e149] [cursor=pointer]: Publisher
+              - generic [ref=e151]:
+                - rowgroup [ref=e152]:
+                  - row "image Git Pocket Guide Richard E. Silverman O'Reilly Media" [ref=e153]:
+                    - gridcell "image" [ref=e154]:
+                      - img "image" [ref=e155]
+                    - gridcell "Git Pocket Guide" [ref=e156]:
+                      - link "Git Pocket Guide" [ref=e159] [cursor=pointer]:
+                        - /url: /books?book=9781449325862
+                    - gridcell "Richard E. Silverman" [ref=e160]
+                    - gridcell "O'Reilly Media" [ref=e161]
+                - rowgroup [ref=e162]:
+                  - row "image Learning JavaScript Design Patterns Addy Osmani O'Reilly Media" [ref=e163]:
+                    - gridcell "image" [ref=e164]:
+                      - img "image" [ref=e165]
+                    - gridcell "Learning JavaScript Design Patterns" [ref=e166]:
+                      - link "Learning JavaScript Design Patterns" [ref=e169] [cursor=pointer]:
+                        - /url: /books?book=9781449331818
+                    - gridcell "Addy Osmani" [ref=e170]
+                    - gridcell "O'Reilly Media" [ref=e171]
+                - rowgroup [ref=e172]:
+                  - row "image Designing Evolvable Web APIs with ASP.NET Glenn Block et al. O'Reilly Media" [ref=e173]:
+                    - gridcell "image" [ref=e174]:
+                      - img "image" [ref=e175]
+                    - gridcell "Designing Evolvable Web APIs with ASP.NET" [ref=e176]:
+                      - link "Designing Evolvable Web APIs with ASP.NET" [ref=e179] [cursor=pointer]:
+                        - /url: /books?book=9781449337711
+                    - gridcell "Glenn Block et al." [ref=e180]
+                    - gridcell "O'Reilly Media" [ref=e181]
+                - rowgroup [ref=e182]:
+                  - row "image Speaking JavaScript Axel Rauschmayer O'Reilly Media" [ref=e183]:
+                    - gridcell "image" [ref=e184]:
+                      - img "image" [ref=e185]
+                    - gridcell "Speaking JavaScript" [ref=e186]:
+                      - link "Speaking JavaScript" [ref=e189] [cursor=pointer]:
+                        - /url: /books?book=9781449365035
+                    - gridcell "Axel Rauschmayer" [ref=e190]
+                    - gridcell "O'Reilly Media" [ref=e191]
+                - rowgroup [ref=e192]:
+                  - row "image You Don't Know JS Kyle Simpson O'Reilly Media" [ref=e193]:
+                    - gridcell "image" [ref=e194]:
+                      - img "image" [ref=e195]
+                    - gridcell "You Don't Know JS" [ref=e196]:
+                      - link "You Don't Know JS" [ref=e199] [cursor=pointer]:
+                        - /url: /books?book=9781491904244
+                    - gridcell "Kyle Simpson" [ref=e200]
+                    - gridcell "O'Reilly Media" [ref=e201]
+                - rowgroup [ref=e202]:
+                  - row "image Programming JavaScript Applications Eric Elliott O'Reilly Media" [ref=e203]:
+                    - gridcell "image" [ref=e204]:
+                      - img "image" [ref=e205]
+                    - gridcell "Programming JavaScript Applications" [ref=e206]:
+                      - link "Programming JavaScript Applications" [ref=e209] [cursor=pointer]:
+                        - /url: /books?book=9781491950296
+                    - gridcell "Eric Elliott" [ref=e210]
+                    - gridcell "O'Reilly Media" [ref=e211]
+                - rowgroup [ref=e212]:
+                  - row "image Eloquent JavaScript, Second Edition Marijn Haverbeke No Starch Press" [ref=e213]:
+                    - gridcell "image" [ref=e214]:
+                      - img "image" [ref=e215]
+                    - gridcell "Eloquent JavaScript, Second Edition" [ref=e216]:
+                      - link "Eloquent JavaScript, Second Edition" [ref=e219] [cursor=pointer]:
+                        - /url: /books?book=9781593275846
+                    - gridcell "Marijn Haverbeke" [ref=e220]
+                    - gridcell "No Starch Press" [ref=e221]
+                - rowgroup [ref=e222]:
+                  - row "image Understanding ECMAScript 6 Nicholas C. Zakas No Starch Press" [ref=e223]:
+                    - gridcell "image" [ref=e224]:
+                      - img "image" [ref=e225]
+                    - gridcell "Understanding ECMAScript 6" [ref=e226]:
+                      - link "Understanding ECMAScript 6" [ref=e229] [cursor=pointer]:
+                        - /url: /books?book=9781593277574
+                    - gridcell "Nicholas C. Zakas" [ref=e230]
+                    - gridcell "No Starch Press" [ref=e231]
+                - rowgroup [ref=e232]:
+                  - row [ref=e233]:
+                    - gridcell [ref=e234]
+                    - gridcell [ref=e236]
+                    - gridcell [ref=e238]
+                    - gridcell [ref=e240]
+                - rowgroup [ref=e242]:
+                  - row [ref=e243]:
+                    - gridcell [ref=e244]
+                    - gridcell [ref=e246]
+                    - gridcell [ref=e248]
+                    - gridcell [ref=e250]
+            - generic [ref=e253]:
+              - button "Previous" [disabled] [ref=e255]
+              - generic [ref=e256]:
+                - generic [ref=e257]:
+                  - text: Page
+                  - spinbutton "jump to page" [ref=e259]: "1"
+                  - text: of
+                  - generic [ref=e260]: "1"
+                - combobox "rows per page" [ref=e262]:
+                  - option "5 rows"
+                  - option "10 rows" [selected]
+                  - option "20 rows"
+                  - option "25 rows"
+                  - option "50 rows"
+                  - option "100 rows"
+              - button "Next" [disabled] [ref=e264]
+            - generic:
+              - generic: Loading...
+        - iframe [ref=e268]:
+          
+      - generic [ref=e273]:
+        - img "Build PlayWright tests with AI" [ref=e275] [cursor=pointer]
+        - iframe [ref=e278]:
+          
+    - contentinfo [ref=e279]:
+      - generic [ref=e280]: © 2013-2020 TOOLSQA.COM | ALL RIGHTS RESERVED.
+```

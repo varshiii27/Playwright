@@ -15,6 +15,10 @@ jobs:
       # Checkout code
       - uses: actions/checkout@v4
 
+      # Debug: List all directory contents
+      - name: List repository contents
+        run: ls -R
+
       # Setup Node.js
       - uses: actions/setup-node@v4
         with:
@@ -23,6 +27,10 @@ jobs:
       # Install dependencies
       - name: Install dependencies
         run: npm ci
+
+      # Debug: List installed packages
+      - name: List installed packages
+        run: npm list --depth=0
 
       # Install Playwright browsers with system deps
       - name: Install Playwright Browsers
@@ -38,13 +46,18 @@ jobs:
           sudo ln -s /opt/allure-2.30.0/bin/allure /usr/bin/allure
           allure --version
 
-      # Debug: list test files to confirm path
+      # Debug: List e2e/tests directory
       - name: List e2e/tests directory
-        run: ls -R e2e/tests || echo "Directory not found"
+        run: ls -R e2e/tests || echo "e2e/tests does not exist"
 
-      # Run ONLY logintest.spec.js
-      - name: Run Playwright Login Test
+      # Debug: Show Playwright config
+      - name: Show Playwright config
+        run: npx playwright show-config
+
+      # Run Playwright tests
+      - name: Run Playwright tests
         run: npx playwright test e2e/tests/logintest.spec.js --project=chromium --reporter=html,allure-playwright
+        working-directory: .
 
       # Generate Allure Report
       - name: Generate Allure Report

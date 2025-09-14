@@ -1,0 +1,524 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - region "Skip to main content":
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#__docusaurus_skipToContent_fallback"
+  - navigation "Main" [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link "Playwright logo Playwright for Python" [ref=e7] [cursor=pointer]:
+          - /url: /python/
+          - img "Playwright logo" [ref=e9] [cursor=pointer]
+          - generic [ref=e10] [cursor=pointer]: Playwright for Python
+        - link "Docs" [ref=e11] [cursor=pointer]:
+          - /url: /python/docs/intro
+        - link "API" [ref=e12] [cursor=pointer]:
+          - /url: /python/docs/api/class-playwright
+        - button "Python" [ref=e14] [cursor=pointer]
+        - link "Agents" [ref=e15] [cursor=pointer]:
+          - /url: /python/agents
+        - link "Community" [ref=e16] [cursor=pointer]:
+          - /url: /python/community/welcome
+      - generic [ref=e17]:
+        - link "GitHub repository" [ref=e18] [cursor=pointer]:
+          - /url: https://github.com/microsoft/playwright-python
+        - link "Discord server" [ref=e19] [cursor=pointer]:
+          - /url: https://aka.ms/playwright/discord
+        - button "Switch between dark and light mode (currently system mode)" [ref=e21] [cursor=pointer]:
+          - img [ref=e22] [cursor=pointer]
+        - button "Search (Ctrl+K)" [ref=e25] [cursor=pointer]:
+          - generic [ref=e26] [cursor=pointer]:
+            - img [ref=e27] [cursor=pointer]
+            - generic [ref=e29] [cursor=pointer]: Search
+          - generic [ref=e30] [cursor=pointer]:
+            - img [ref=e32] [cursor=pointer]
+            - generic [ref=e34] [cursor=pointer]: K
+  - generic [ref=e37]:
+    - complementary [ref=e38]:
+      - navigation "Docs sidebar" [ref=e41]:
+        - list [ref=e42]:
+          - listitem [ref=e43]:
+            - button "Getting Started" [expanded] [ref=e45] [cursor=pointer]
+            - list [ref=e46]:
+              - listitem [ref=e47]:
+                - link "Installation" [ref=e48] [cursor=pointer]:
+                  - /url: /python/docs/intro
+              - listitem [ref=e49]:
+                - link "Writing tests" [ref=e50] [cursor=pointer]:
+                  - /url: /python/docs/writing-tests
+              - listitem [ref=e51]:
+                - link "Generating tests" [ref=e52] [cursor=pointer]:
+                  - /url: /python/docs/codegen-intro
+              - listitem [ref=e53]:
+                - link "Running and debugging tests" [ref=e54] [cursor=pointer]:
+                  - /url: /python/docs/running-tests
+              - listitem [ref=e55]:
+                - link "Trace viewer" [ref=e56] [cursor=pointer]:
+                  - /url: /python/docs/trace-viewer-intro
+              - listitem [ref=e57]:
+                - link "Setting up CI" [ref=e58] [cursor=pointer]:
+                  - /url: /python/docs/ci-intro
+              - listitem [ref=e59]:
+                - link "Pytest Plugin Reference" [ref=e60] [cursor=pointer]:
+                  - /url: /python/docs/test-runners
+          - listitem [ref=e61]:
+            - link "Getting started - Library" [ref=e62] [cursor=pointer]:
+              - /url: /python/docs/library
+          - listitem [ref=e63]:
+            - link "Release notes" [ref=e64] [cursor=pointer]:
+              - /url: /python/docs/release-notes
+          - listitem [ref=e65]:
+            - button "Guides" [expanded] [ref=e67] [cursor=pointer]
+            - list [ref=e68]:
+              - listitem [ref=e69]:
+                - link "Actions" [ref=e70] [cursor=pointer]:
+                  - /url: /python/docs/input
+              - listitem [ref=e71]:
+                - link "Auto-waiting" [ref=e72] [cursor=pointer]:
+                  - /url: /python/docs/actionability
+              - listitem [ref=e73]:
+                - link "API testing" [ref=e74] [cursor=pointer]:
+                  - /url: /python/docs/api-testing
+              - listitem [ref=e75]:
+                - link "Assertions" [ref=e76] [cursor=pointer]:
+                  - /url: /python/docs/test-assertions
+              - listitem [ref=e77]:
+                - link "Authentication" [ref=e78] [cursor=pointer]:
+                  - /url: /python/docs/auth
+              - listitem [ref=e79]:
+                - link "Browsers" [ref=e80] [cursor=pointer]:
+                  - /url: /python/docs/browsers
+              - listitem [ref=e81]:
+                - link "Chrome extensions" [ref=e82] [cursor=pointer]:
+                  - /url: /python/docs/chrome-extensions
+              - listitem [ref=e83]:
+                - link "Clock" [ref=e84] [cursor=pointer]:
+                  - /url: /python/docs/clock
+              - listitem [ref=e85]:
+                - link "Debugging Tests" [ref=e86] [cursor=pointer]:
+                  - /url: /python/docs/debug
+              - listitem [ref=e87]:
+                - link "Dialogs" [ref=e88] [cursor=pointer]:
+                  - /url: /python/docs/dialogs
+              - listitem [ref=e89]:
+                - link "Downloads" [ref=e90] [cursor=pointer]:
+                  - /url: /python/docs/downloads
+              - listitem [ref=e91]:
+                - link "Emulation" [ref=e92] [cursor=pointer]:
+                  - /url: /python/docs/emulation
+              - listitem [ref=e93]:
+                - link "Evaluating JavaScript" [ref=e94] [cursor=pointer]:
+                  - /url: /python/docs/evaluating
+              - listitem [ref=e95]:
+                - link "Events" [ref=e96] [cursor=pointer]:
+                  - /url: /python/docs/events
+              - listitem [ref=e97]:
+                - link "Extensibility" [ref=e98] [cursor=pointer]:
+                  - /url: /python/docs/extensibility
+              - listitem [ref=e99]:
+                - link "Frames" [ref=e100] [cursor=pointer]:
+                  - /url: /python/docs/frames
+              - listitem [ref=e101]:
+                - link "Handles" [ref=e102] [cursor=pointer]:
+                  - /url: /python/docs/handles
+              - listitem [ref=e103]:
+                - link "Isolation" [ref=e104] [cursor=pointer]:
+                  - /url: /python/docs/browser-contexts
+              - listitem [ref=e105]:
+                - link "Locators" [ref=e106] [cursor=pointer]:
+                  - /url: /python/docs/locators
+              - listitem [ref=e107]:
+                - link "Mock APIs" [ref=e108] [cursor=pointer]:
+                  - /url: /python/docs/mock
+              - listitem [ref=e109]:
+                - link "Navigations" [ref=e110] [cursor=pointer]:
+                  - /url: /python/docs/navigations
+              - listitem [ref=e111]:
+                - link "Network" [ref=e112] [cursor=pointer]:
+                  - /url: /python/docs/network
+              - listitem [ref=e113]:
+                - link "Other locators" [ref=e114] [cursor=pointer]:
+                  - /url: /python/docs/other-locators
+              - listitem [ref=e115]:
+                - link "Pages" [ref=e116] [cursor=pointer]:
+                  - /url: /python/docs/pages
+              - listitem [ref=e117]:
+                - link "Page object models" [ref=e118] [cursor=pointer]:
+                  - /url: /python/docs/pom
+              - listitem [ref=e119]:
+                - link "Screenshots" [ref=e120] [cursor=pointer]:
+                  - /url: /python/docs/screenshots
+              - listitem [ref=e121]:
+                - link "Snapshot testing" [ref=e122] [cursor=pointer]:
+                  - /url: /python/docs/aria-snapshots
+              - listitem [ref=e123]:
+                - link "Test generator" [ref=e124] [cursor=pointer]:
+                  - /url: /python/docs/codegen
+              - listitem [ref=e125]:
+                - link "Touch events (legacy)" [ref=e126] [cursor=pointer]:
+                  - /url: /python/docs/touch-events
+              - listitem [ref=e127]:
+                - link "Trace viewer" [ref=e128] [cursor=pointer]:
+                  - /url: /python/docs/trace-viewer
+              - listitem [ref=e129]:
+                - link "Videos" [ref=e130] [cursor=pointer]:
+                  - /url: /python/docs/videos
+              - listitem [ref=e131]:
+                - link "WebView2" [ref=e132] [cursor=pointer]:
+                  - /url: /python/docs/webview2
+          - listitem [ref=e133]:
+            - button "Integrations" [ref=e135] [cursor=pointer]
+          - listitem [ref=e136]:
+            - link "Supported languages" [ref=e137] [cursor=pointer]:
+              - /url: /python/docs/languages
+    - main [ref=e138]:
+      - generic [ref=e140]:
+        - generic [ref=e142]:
+          - article [ref=e143]:
+            - navigation "Breadcrumbs" [ref=e144]:
+              - list [ref=e145]:
+                - listitem [ref=e146]:
+                  - link "Home page" [ref=e147] [cursor=pointer]:
+                    - /url: /python/
+                    - img [ref=e148] [cursor=pointer]
+                - listitem [ref=e150]:
+                  - generic [ref=e151]: Getting Started
+                - listitem [ref=e152]:
+                  - generic [ref=e153]: Installation
+            - generic [ref=e154]:
+              - heading "Installation" [level=1] [ref=e156]
+              - heading "IntroductionDirect link to Introduction" [level=2] [ref=e157]:
+                - text: Introduction
+                - link "Direct link to Introduction" [ref=e158] [cursor=pointer]:
+                  - /url: "#introduction"
+                  - text: "#"
+              - paragraph [ref=e159]: Playwright was created specifically to accommodate the needs of end-to-end testing. Playwright supports all modern rendering engines including Chromium, WebKit, and Firefox. Test on Windows, Linux, and macOS, locally or on CI, headless or headed with native mobile emulation.
+              - paragraph [ref=e160]:
+                - text: The
+                - link "Playwright library" [ref=e161] [cursor=pointer]:
+                  - /url: /python/docs/library
+                - text: can be used as a general purpose browser automation tool, providing a powerful set of APIs to automate web applications, for both sync and async Python.
+              - paragraph [ref=e162]: This introduction describes the Playwright Pytest plugin, which is the recommended way to write end-to-end tests.
+              - paragraph [ref=e163]:
+                - strong [ref=e164]: You will learn
+              - list [ref=e165]:
+                - listitem [ref=e166]:
+                  - link "How to install Playwright Pytest" [ref=e167] [cursor=pointer]:
+                    - /url: /python/docs/intro#installing-playwright-pytest
+                - listitem [ref=e168]:
+                  - link "How to run the example test" [ref=e169] [cursor=pointer]:
+                    - /url: /python/docs/intro#running-the-example-test
+              - heading "Installing Playwright PytestDirect link to Installing Playwright Pytest" [level=2] [ref=e170]:
+                - text: Installing Playwright Pytest
+                - link "Direct link to Installing Playwright Pytest" [ref=e171] [cursor=pointer]:
+                  - /url: "#installing-playwright-pytest"
+                  - text: "#"
+              - paragraph [ref=e172]:
+                - text: Playwright recommends using the official
+                - link "Playwright Pytest plugin" [ref=e173] [cursor=pointer]:
+                  - /url: /python/docs/test-runners
+                - text: to write end-to-end tests. It provides context isolation, running it on multiple browser configurations out of the box.
+              - paragraph [ref=e174]: Get started by installing Playwright and running the example test to see it in action.
+              - generic [ref=e175]:
+                - tablist [ref=e176]:
+                  - tab "PyPI" [selected] [ref=e177] [cursor=pointer]
+                  - tab "Anaconda" [ref=e178] [cursor=pointer]
+                - tabpanel [ref=e180]:
+                  - paragraph [ref=e181]:
+                    - text: Install the
+                    - link "Pytest plugin" [ref=e182] [cursor=pointer]:
+                      - /url: https://pypi.org/project/pytest-playwright/
+                    - text: ":"
+                  - generic [ref=e184]:
+                    - code [ref=e186]:
+                      - generic [ref=e187]:
+                        - generic [ref=e188]: pip
+                        - generic [ref=e189]: install
+                        - generic [ref=e190]: pytest-playwright
+                    - button "Copy code to clipboard" [ref=e192] [cursor=pointer]:
+                      - generic [ref=e193] [cursor=pointer]:
+                        - img [ref=e194] [cursor=pointer]
+                        - img [ref=e196] [cursor=pointer]
+              - paragraph [ref=e198]: "Install the required browsers:"
+              - generic [ref=e200]:
+                - code [ref=e202]:
+                  - generic [ref=e203]:
+                    - generic [ref=e204]: playwright
+                    - generic [ref=e205]: install
+                - button "Copy code to clipboard" [ref=e207] [cursor=pointer]:
+                  - generic [ref=e208] [cursor=pointer]:
+                    - img [ref=e209] [cursor=pointer]
+                    - img [ref=e211] [cursor=pointer]
+              - heading "Add Example TestDirect link to Add Example Test" [level=2] [ref=e213]:
+                - text: Add Example Test
+                - link "Direct link to Add Example Test" [ref=e214] [cursor=pointer]:
+                  - /url: "#add-example-test"
+                  - text: "#"
+              - paragraph [ref=e215]:
+                - text: Create a file that follows the
+                - code [ref=e216]: test_
+                - text: prefix convention, such as
+                - code [ref=e217]: test_example.py
+                - text: ", inside the current working directory or in a sub-directory with the code below. Make sure your test name also follows the"
+                - code [ref=e218]: test_
+                - text: prefix convention.
+              - generic [ref=e219]:
+                - generic [ref=e220]: test_example.py
+                - generic [ref=e221]:
+                  - code [ref=e223]:
+                    - generic [ref=e224]:
+                      - generic [ref=e225]: import
+                      - generic [ref=e226]: re
+                    - generic [ref=e227]:
+                      - generic [ref=e228]: from
+                      - generic [ref=e229]: playwright
+                      - generic [ref=e230]: .
+                      - generic [ref=e231]: sync_api
+                      - generic [ref=e232]: import
+                      - generic [ref=e233]: Page
+                      - generic [ref=e234]: ","
+                      - generic [ref=e235]: expect
+                    - generic [ref=e236]:
+                      - generic [ref=e237]: def
+                      - generic [ref=e239]: test_has_title
+                      - generic [ref=e240]: (
+                      - generic [ref=e241]: page
+                      - generic [ref=e242]: ":"
+                      - generic [ref=e243]: Page
+                      - generic [ref=e244]: )
+                      - generic [ref=e245]: ":"
+                    - generic [ref=e246]:
+                      - generic [ref=e247]: page
+                      - generic [ref=e248]: .
+                      - generic [ref=e249]: goto
+                      - generic [ref=e250]: (
+                      - generic [ref=e251]: "\"https://playwright.dev/\""
+                      - generic [ref=e252]: )
+                    - generic [ref=e255]: "# Expect a title \"to contain\" a substring."
+                    - generic [ref=e256]:
+                      - generic [ref=e257]: expect
+                      - generic [ref=e258]: (
+                      - generic [ref=e259]: page
+                      - generic [ref=e260]: )
+                      - generic [ref=e261]: .
+                      - generic [ref=e262]: to_have_title
+                      - generic [ref=e263]: (
+                      - generic [ref=e264]: re
+                      - generic [ref=e265]: .
+                      - generic [ref=e266]: compile
+                      - generic [ref=e267]: (
+                      - generic [ref=e268]: "\"Playwright\""
+                      - generic [ref=e269]: )
+                      - generic [ref=e270]: )
+                    - generic [ref=e271]:
+                      - generic [ref=e272]: def
+                      - generic [ref=e274]: test_get_started_link
+                      - generic [ref=e275]: (
+                      - generic [ref=e276]: page
+                      - generic [ref=e277]: ":"
+                      - generic [ref=e278]: Page
+                      - generic [ref=e279]: )
+                      - generic [ref=e280]: ":"
+                    - generic [ref=e281]:
+                      - generic [ref=e282]: page
+                      - generic [ref=e283]: .
+                      - generic [ref=e284]: goto
+                      - generic [ref=e285]: (
+                      - generic [ref=e286]: "\"https://playwright.dev/\""
+                      - generic [ref=e287]: )
+                    - generic [ref=e290]: "# Click the get started link."
+                    - generic [ref=e291]:
+                      - generic [ref=e292]: page
+                      - generic [ref=e293]: .
+                      - generic [ref=e294]: get_by_role
+                      - generic [ref=e295]: (
+                      - generic [ref=e296]: "\"link\""
+                      - generic [ref=e297]: ","
+                      - generic [ref=e298]: name
+                      - generic [ref=e299]: =
+                      - generic [ref=e300]: "\"Get started\""
+                      - generic [ref=e301]: )
+                      - generic [ref=e302]: .
+                      - generic [ref=e303]: click
+                      - generic [ref=e304]: (
+                      - generic [ref=e305]: )
+                    - generic [ref=e308]: "# Expects page to have a heading with the name of Installation."
+                    - generic [ref=e309]:
+                      - generic [ref=e310]: expect
+                      - generic [ref=e311]: (
+                      - generic [ref=e312]: page
+                      - generic [ref=e313]: .
+                      - generic [ref=e314]: get_by_role
+                      - generic [ref=e315]: (
+                      - generic [ref=e316]: "\"heading\""
+                      - generic [ref=e317]: ","
+                      - generic [ref=e318]: name
+                      - generic [ref=e319]: =
+                      - generic [ref=e320]: "\"Installation\""
+                      - generic [ref=e321]: )
+                      - generic [ref=e322]: )
+                      - generic [ref=e323]: .
+                      - generic [ref=e324]: to_be_visible
+                      - generic [ref=e325]: (
+                      - generic [ref=e326]: )
+                  - button "Copy code to clipboard" [ref=e328] [cursor=pointer]:
+                    - generic [ref=e329] [cursor=pointer]:
+                      - img [ref=e330] [cursor=pointer]
+                      - img [ref=e332] [cursor=pointer]
+              - heading "Running the Example TestDirect link to Running the Example Test" [level=2] [ref=e334]:
+                - text: Running the Example Test
+                - link "Direct link to Running the Example Test" [ref=e335] [cursor=pointer]:
+                  - /url: "#running-the-example-test"
+                  - text: "#"
+              - paragraph [ref=e336]:
+                - text: By default tests will be run on chromium. This can be configured via the
+                - link "CLI options" [ref=e337] [cursor=pointer]:
+                  - /url: /python/docs/running-tests
+                - text: . Tests are run in headless mode meaning no browser UI will open up when running the tests. Results of the tests and test logs will be shown in the terminal.
+              - generic [ref=e339]:
+                - code [ref=e341]:
+                  - generic [ref=e343]: pytest
+                - button "Copy code to clipboard" [ref=e345] [cursor=pointer]:
+                  - generic [ref=e346] [cursor=pointer]:
+                    - img [ref=e347] [cursor=pointer]
+                    - img [ref=e349] [cursor=pointer]
+              - heading "Updating PlaywrightDirect link to Updating Playwright" [level=2] [ref=e351]:
+                - text: Updating Playwright
+                - link "Direct link to Updating Playwright" [ref=e352] [cursor=pointer]:
+                  - /url: "#updating-playwright"
+                  - text: "#"
+              - paragraph [ref=e353]: "To update Playwright to the latest version run the following command:"
+              - generic [ref=e355]:
+                - code [ref=e357]:
+                  - generic [ref=e358]:
+                    - generic [ref=e359]: pip
+                    - generic [ref=e360]: install
+                    - generic [ref=e361]: pytest-playwright playwright
+                    - generic [ref=e362]: "-U"
+                - button "Copy code to clipboard" [ref=e364] [cursor=pointer]:
+                  - generic [ref=e365] [cursor=pointer]:
+                    - img [ref=e366] [cursor=pointer]
+                    - img [ref=e368] [cursor=pointer]
+              - heading "System requirementsDirect link to System requirements" [level=2] [ref=e370]:
+                - text: System requirements
+                - link "Direct link to System requirements" [ref=e371] [cursor=pointer]:
+                  - /url: "#system-requirements"
+                  - text: "#"
+              - list [ref=e372]:
+                - listitem [ref=e373]: Python 3.8 or higher.
+                - listitem [ref=e374]: Windows 10+, Windows Server 2016+ or Windows Subsystem for Linux (WSL).
+                - listitem [ref=e375]: macOS 14 Ventura, or later.
+                - listitem [ref=e376]: Debian 12, Debian 13, Ubuntu 22.04, Ubuntu 24.04, on x86-64 and arm64 architecture.
+              - heading "What's nextDirect link to What's next" [level=2] [ref=e377]:
+                - text: What's next
+                - link "Direct link to What's next" [ref=e378] [cursor=pointer]:
+                  - /url: "#whats-next"
+                  - text: "#"
+              - list [ref=e379]:
+                - listitem [ref=e380]:
+                  - link "Write tests using web first assertions, page fixtures and locators" [ref=e381] [cursor=pointer]:
+                    - /url: /python/docs/writing-tests
+                - listitem [ref=e382]:
+                  - link "Run single test, multiple tests, headed mode" [ref=e383] [cursor=pointer]:
+                    - /url: /python/docs/running-tests
+                - listitem [ref=e384]:
+                  - link "Generate tests with Codegen" [ref=e385] [cursor=pointer]:
+                    - /url: /python/docs/codegen
+                - listitem [ref=e386]:
+                  - link "See a trace of your tests" [ref=e387] [cursor=pointer]:
+                    - /url: /python/docs/trace-viewer-intro
+          - navigation "Docs pages" [ref=e388]:
+            - link "Next Writing tests »" [ref=e389] [cursor=pointer]:
+              - /url: /python/docs/writing-tests
+              - generic [ref=e390] [cursor=pointer]: Next
+              - generic [ref=e391] [cursor=pointer]: Writing tests »
+        - list [ref=e394]:
+          - listitem [ref=e395]:
+            - link "Introduction" [ref=e396] [cursor=pointer]:
+              - /url: "#introduction"
+          - listitem [ref=e397]:
+            - link "Installing Playwright Pytest" [ref=e398] [cursor=pointer]:
+              - /url: "#installing-playwright-pytest"
+          - listitem [ref=e399]:
+            - link "Add Example Test" [ref=e400] [cursor=pointer]:
+              - /url: "#add-example-test"
+          - listitem [ref=e401]:
+            - link "Running the Example Test" [ref=e402] [cursor=pointer]:
+              - /url: "#running-the-example-test"
+          - listitem [ref=e403]:
+            - link "Updating Playwright" [ref=e404] [cursor=pointer]:
+              - /url: "#updating-playwright"
+          - listitem [ref=e405]:
+            - link "System requirements" [ref=e406] [cursor=pointer]:
+              - /url: "#system-requirements"
+          - listitem [ref=e407]:
+            - link "What's next" [ref=e408] [cursor=pointer]:
+              - /url: "#whats-next"
+  - contentinfo [ref=e409]:
+    - generic [ref=e410]:
+      - generic [ref=e411]:
+        - generic [ref=e412]:
+          - generic [ref=e413]: Learn
+          - list [ref=e414]:
+            - listitem [ref=e415]:
+              - link "Getting started" [ref=e416] [cursor=pointer]:
+                - /url: /python/docs/intro
+            - listitem [ref=e417]:
+              - link "Playwright Training" [ref=e418] [cursor=pointer]:
+                - /url: https://learn.microsoft.com/en-us/training/modules/build-with-playwright/
+                - text: Playwright Training
+                - img [ref=e419] [cursor=pointer]
+            - listitem [ref=e421]:
+              - link "Learn Videos" [ref=e422] [cursor=pointer]:
+                - /url: /python/community/learn-videos
+            - listitem [ref=e423]:
+              - link "Feature Videos" [ref=e424] [cursor=pointer]:
+                - /url: /python/community/feature-videos
+        - generic [ref=e425]:
+          - generic [ref=e426]: Community
+          - list [ref=e427]:
+            - listitem [ref=e428]:
+              - link "Stack Overflow" [ref=e429] [cursor=pointer]:
+                - /url: https://stackoverflow.com/questions/tagged/playwright
+                - text: Stack Overflow
+                - img [ref=e430] [cursor=pointer]
+            - listitem [ref=e432]:
+              - link "Discord" [ref=e433] [cursor=pointer]:
+                - /url: https://aka.ms/playwright/discord
+                - text: Discord
+                - img [ref=e434] [cursor=pointer]
+            - listitem [ref=e436]:
+              - link "Twitter" [ref=e437] [cursor=pointer]:
+                - /url: https://twitter.com/playwrightweb
+                - text: Twitter
+                - img [ref=e438] [cursor=pointer]
+            - listitem [ref=e440]:
+              - link "LinkedIn" [ref=e441] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/playwrightweb
+                - text: LinkedIn
+                - img [ref=e442] [cursor=pointer]
+        - generic [ref=e444]:
+          - generic [ref=e445]: More
+          - list [ref=e446]:
+            - listitem [ref=e447]:
+              - link "GitHub" [ref=e448] [cursor=pointer]:
+                - /url: https://github.com/microsoft/playwright-python
+                - text: GitHub
+                - img [ref=e449] [cursor=pointer]
+            - listitem [ref=e451]:
+              - link "YouTube" [ref=e452] [cursor=pointer]:
+                - /url: https://www.youtube.com/channel/UC46Zj8pDH5tDosqm1gd7WTg
+                - text: YouTube
+                - img [ref=e453] [cursor=pointer]
+            - listitem [ref=e455]:
+              - link "Blog" [ref=e456] [cursor=pointer]:
+                - /url: https://dev.to/playwright
+                - text: Blog
+                - img [ref=e457] [cursor=pointer]
+            - listitem [ref=e459]:
+              - link "Ambassadors" [ref=e460] [cursor=pointer]:
+                - /url: /python/community/ambassadors
+      - generic [ref=e462]: Copyright © 2025 Microsoft
+```

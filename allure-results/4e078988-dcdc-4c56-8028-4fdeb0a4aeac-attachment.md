@@ -1,0 +1,221 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e4]:
+      - link "Home" [ref=e6] [cursor=pointer]:
+        - /url: /en
+        - img "Node.js logo" [ref=e7] [cursor=pointer]
+      - checkbox "Toggle navigation menu" [ref=e18]
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - link "Learn" [ref=e21] [cursor=pointer]:
+            - /url: /en/learn
+            - generic [ref=e22] [cursor=pointer]: Learn
+          - link "About" [ref=e23] [cursor=pointer]:
+            - /url: /en/about
+            - generic [ref=e24] [cursor=pointer]: About
+          - link "Download" [ref=e25] [cursor=pointer]:
+            - /url: /en/download
+            - generic [ref=e26] [cursor=pointer]: Download
+          - link "Blog" [ref=e27] [cursor=pointer]:
+            - /url: /en/blog
+            - generic [ref=e28] [cursor=pointer]: Blog
+          - link "Docs" [ref=e29] [cursor=pointer]:
+            - /url: https://nodejs.org/docs/latest/api/
+            - generic [ref=e30] [cursor=pointer]: Docs
+          - link "Contribute" [ref=e31] [cursor=pointer]:
+            - /url: https://github.com/nodejs/node/blob/main/CONTRIBUTING.md
+            - generic [ref=e32] [cursor=pointer]: Contribute
+            - img [ref=e33] [cursor=pointer]
+          - link "Certification" [ref=e35] [cursor=pointer]:
+            - /url: https://training.linuxfoundation.org/openjs/
+            - generic [ref=e36] [cursor=pointer]: Certification
+            - img [ref=e37] [cursor=pointer]
+        - generic [ref=e39]:
+          - button "Start typing... Ctrl + K" [ref=e42] [cursor=pointer]:
+            - generic [ref=e43] [cursor=pointer]:
+              - img [ref=e45] [cursor=pointer]
+              - generic [ref=e47] [cursor=pointer]: Start typing...
+            - generic [ref=e48] [cursor=pointer]: Ctrl + K
+          - button "Switch to Dark Mode" [ref=e49] [cursor=pointer]:
+            - img [ref=e50] [cursor=pointer]
+          - button "Choose Language" [ref=e52] [cursor=pointer]:
+            - img [ref=e53] [cursor=pointer]
+          - link "Node.js Github" [ref=e55] [cursor=pointer]:
+            - /url: https://github.com/nodejs/node
+            - img [ref=e56] [cursor=pointer]
+    - generic [ref=e58]:
+      - img [ref=e60]
+      - main [ref=e337]:
+        - generic [ref=e338]:
+          - generic [ref=e339]:
+            - heading "Run JavaScript Everywhere" [level=1] [ref=e340]
+            - paragraph [ref=e341]: Node.js® is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.
+          - generic [ref=e343]:
+            - button "Get Node.js®" [ref=e344] [cursor=pointer]
+            - button "Get security support for EOL Node.js versions" [ref=e345] [cursor=pointer]:
+              - generic [ref=e346] [cursor=pointer]: Get security support
+              - generic [ref=e347] [cursor=pointer]: for EOL Node.js versions
+        - generic [ref=e348]:
+          - generic [ref=e350]:
+            - tablist [ref=e351]:
+              - tab "Create an HTTP Server" [selected] [ref=e352] [cursor=pointer]
+              - tab "Write Tests" [ref=e353] [cursor=pointer]
+              - tab "Read and Hash a File" [ref=e354] [cursor=pointer]
+              - tab "Streams Pipeline" [ref=e355] [cursor=pointer]
+              - tab "Work with Threads" [ref=e356] [cursor=pointer]
+            - tabpanel "Create an HTTP Server" [ref=e357]:
+              - generic [ref=e358]:
+                - code [ref=e360]:
+                  - generic [ref=e362]: // server.mjs
+                  - generic [ref=e363]:
+                    - generic [ref=e364]: import
+                    - generic [ref=e365]: "{"
+                    - generic [ref=e366]: createServer
+                    - generic [ref=e367]: "}"
+                    - generic [ref=e368]: from
+                    - generic [ref=e369]: "'"
+                    - generic [ref=e370]: node:http
+                    - generic [ref=e371]: "'"
+                    - generic [ref=e372]: ;
+                  - generic [ref=e374]:
+                    - generic [ref=e375]: const
+                    - generic [ref=e376]: server
+                    - generic [ref=e377]: =
+                    - generic [ref=e378]: createServer
+                    - generic [ref=e379]: (
+                    - generic [ref=e380]: (
+                    - generic [ref=e381]: req
+                    - generic [ref=e382]: ","
+                    - generic [ref=e383]: res
+                    - generic [ref=e384]: )
+                    - generic [ref=e385]: =>
+                    - generic [ref=e386]: "{"
+                  - generic [ref=e387]:
+                    - generic [ref=e388]: res
+                    - generic [ref=e389]: .
+                    - generic [ref=e390]: writeHead
+                    - generic [ref=e391]: (
+                    - generic [ref=e392]: "200"
+                    - generic [ref=e393]: ","
+                    - generic [ref=e394]: "{"
+                    - generic [ref=e395]: "'"
+                    - generic [ref=e396]: Content-Type
+                    - generic [ref=e397]: "'"
+                    - generic [ref=e398]: ":"
+                    - generic [ref=e399]: "'"
+                    - generic [ref=e400]: text/plain
+                    - generic [ref=e401]: "'"
+                    - generic [ref=e402]: "}"
+                    - generic [ref=e403]: )
+                    - generic [ref=e404]: ;
+                  - generic [ref=e405]:
+                    - generic [ref=e406]: res
+                    - generic [ref=e407]: .
+                    - generic [ref=e408]: end
+                    - generic [ref=e409]: (
+                    - generic [ref=e410]: "'"
+                    - generic [ref=e411]: Hello World!
+                    - generic [ref=e412]: \n
+                    - generic [ref=e413]: "'"
+                    - generic [ref=e414]: )
+                    - generic [ref=e415]: ;
+                  - generic [ref=e416]:
+                    - generic [ref=e417]: "}"
+                    - generic [ref=e418]: )
+                    - generic [ref=e419]: ;
+                  - generic [ref=e422]: // starts a simple http server locally on port 3000
+                  - generic [ref=e423]:
+                    - generic [ref=e424]: server
+                    - generic [ref=e425]: .
+                    - generic [ref=e426]: listen
+                    - generic [ref=e427]: (
+                    - generic [ref=e428]: "3000"
+                    - generic [ref=e429]: ","
+                    - generic [ref=e430]: "'"
+                    - generic [ref=e431]: 127.0.0.1
+                    - generic [ref=e432]: "'"
+                    - generic [ref=e433]: ","
+                    - generic [ref=e434]: ()
+                    - generic [ref=e435]: =>
+                    - generic [ref=e436]: "{"
+                  - generic [ref=e437]:
+                    - generic [ref=e438]: console
+                    - generic [ref=e439]: .
+                    - generic [ref=e440]: log
+                    - generic [ref=e441]: (
+                    - generic [ref=e442]: "'"
+                    - generic [ref=e443]: Listening on 127.0.0.1:3000
+                    - generic [ref=e444]: "'"
+                    - generic [ref=e445]: )
+                    - generic [ref=e446]: ;
+                  - generic [ref=e447]:
+                    - generic [ref=e448]: "}"
+                    - generic [ref=e449]: )
+                    - generic [ref=e450]: ;
+                  - generic [ref=e453]: "// run with `node server.mjs`"
+                - generic [ref=e454]:
+                  - generic [ref=e455]: JavaScript
+                  - button "Copy to clipboard" [ref=e456] [cursor=pointer]:
+                    - img [ref=e457] [cursor=pointer]
+                    - text: Copy to clipboard
+          - paragraph [ref=e459]:
+            - text: Learn more what Node.js is able to offer with our
+            - link "Learning materials" [ref=e460] [cursor=pointer]:
+              - /url: /en/learn
+            - text: .
+    - contentinfo [ref=e461]:
+      - generic [ref=e462]:
+        - generic [ref=e463]:
+          - link "v22.19.0 Latest LTS" [ref=e464] [cursor=pointer]:
+            - /url: /blog/release/v22.19.0
+            - generic [ref=e465] [cursor=pointer]: v22.19.0
+            - generic [ref=e466] [cursor=pointer]: Latest LTS
+          - link "v24.8.0 Latest Release" [ref=e467] [cursor=pointer]:
+            - /url: /blog/release/v24.8.0
+            - generic [ref=e468] [cursor=pointer]: v24.8.0
+            - generic [ref=e469] [cursor=pointer]: Latest Release
+        - link "Trademark Policy" [ref=e470] [cursor=pointer]:
+          - /url: https://trademark-policy.openjsf.org/
+          - generic [ref=e471] [cursor=pointer]: Trademark Policy
+        - link "Privacy Policy" [ref=e472] [cursor=pointer]:
+          - /url: https://privacy-policy.openjsf.org/
+          - generic [ref=e473] [cursor=pointer]: Privacy Policy
+        - link "Code of Conduct" [ref=e474] [cursor=pointer]:
+          - /url: https://github.com/openjs-foundation/cross-project-council/blob/main/CODE_OF_CONDUCT.md
+          - generic [ref=e475] [cursor=pointer]: Code of Conduct
+        - link "Security Policy" [ref=e476] [cursor=pointer]:
+          - /url: https://github.com/nodejs/node/security/policy
+          - generic [ref=e477] [cursor=pointer]: Security Policy
+      - generic [ref=e478]:
+        - link "© OpenJS Foundation" [ref=e479] [cursor=pointer]:
+          - /url: https://openjsf.org/
+          - generic [ref=e480] [cursor=pointer]: © OpenJS Foundation
+        - generic [ref=e481]:
+          - link "https://github.com/nodejs/node" [ref=e482] [cursor=pointer]:
+            - /url: https://github.com/nodejs/node
+            - img "https://github.com/nodejs/node" [ref=e484] [cursor=pointer]
+          - link "https://discord.gg/nodejs" [ref=e486] [cursor=pointer]:
+            - /url: https://discord.gg/nodejs
+            - img "https://discord.gg/nodejs" [ref=e488] [cursor=pointer]
+          - link "https://social.lfx.dev/@nodejs" [ref=e490] [cursor=pointer]:
+            - /url: https://social.lfx.dev/@nodejs
+            - img "https://social.lfx.dev/@nodejs" [ref=e492] [cursor=pointer]
+          - link "https://bsky.app/profile/nodejs.org" [ref=e495] [cursor=pointer]:
+            - /url: https://bsky.app/profile/nodejs.org
+            - img "https://bsky.app/profile/nodejs.org" [ref=e497] [cursor=pointer]
+          - link "https://twitter.com/nodejs" [ref=e499] [cursor=pointer]:
+            - /url: https://twitter.com/nodejs
+            - img "https://twitter.com/nodejs" [ref=e501] [cursor=pointer]
+          - link "https://slack-invite.openjsf.org/" [ref=e503] [cursor=pointer]:
+            - /url: https://slack-invite.openjsf.org/
+            - img "https://slack-invite.openjsf.org/" [ref=e505] [cursor=pointer]
+          - link "https://www.linkedin.com/company/node-js" [ref=e510] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/node-js
+            - img "https://www.linkedin.com/company/node-js" [ref=e512] [cursor=pointer]
+  - region "Notifications (F8)":
+    - list
+  - alert [ref=e514]
+```

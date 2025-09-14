@@ -28,7 +28,7 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      # ✅ Install Allure CLI
+      # Install Allure CLI
       - name: Install Allure CLI
         run: |
           sudo apt-get update
@@ -38,10 +38,22 @@ jobs:
           sudo ln -s /opt/allure-2.30.0/bin/allure /usr/bin/allure
           allure --version
 
+      # Debug: List e2e/tests directory
+      - name: List e2e/tests directory
+        run: ls -R e2e/tests
 
-      # Run Playwright tests (uses config: testDir = e2e/tests)
+      # Debug: Check Playwright version
+      - name: Check Playwright version
+        run: npx playwright --version
+
+      # Debug: Show Playwright config
+      - name: Show Playwright config
+        run: npx playwright show-config
+
+      # Run Playwright tests
       - name: Run Playwright tests
-        run: npx playwright test logintest.spec.js --project=chromium --reporter=html,allure-playwright
+        run: npx playwright test e2e/tests/logintest.spec.js --project=chromium --reporter=html,allure-playwright
+        working-directory: .
 
       # Generate Allure Report
       - name: Generate Allure Report
